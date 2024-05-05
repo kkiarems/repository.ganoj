@@ -1,0 +1,584 @@
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+*{
+  margin: 0;
+  padding: 0;
+  outline: none;
+  border: none;
+  text-decoration: none;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+body{
+  background: rgb(226, 226, 226);
+}
+nav{
+  position: sticky;
+  top: 0;
+  bottom: 0;
+  height: 100vh;
+  left: 0;
+  width: 90px;
+  /* width: 280px; */
+  background: #fff;
+  overflow: hidden;
+  transition: 1s;
+}
+nav:hover{
+  width: 280px;
+  transition: 1s;
+}
+.logo{
+  text-align: center;
+  display: flex;
+  margin: 10px 0 0 10px;
+  padding-bottom: 3rem;
+}
+
+.logo img{
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+}
+.logo span{
+  font-weight: bold;
+  padding-left: 15px;
+  font-size: 18px;
+  text-transform: uppercase;
+}
+a{
+  position: relative;
+  width: 280px;
+  font-size: 14px;
+  color: rgb(85, 83, 83);
+  display: table;
+  padding: 10px;
+}
+nav .fas {
+  position: relative;
+  width: 70px;
+  height: 40px;
+  top: 20px;
+  font-size: 20px;
+  text-align: center;
+}
+.nav-item{
+  position: relative;
+  top: 12px;
+  margin-left: 10px;
+}
+a:hover{
+  background: #eee;
+}
+a:hover i{
+  color: #34AF6D;
+  transition: 0.5s;
+}
+.logout{
+  position: absolute;
+  bottom: 0;
+}
+
+.container{
+  display: flex;
+}
+
+                        /* MAin Section */
+                        .indexmain{
+                        position: relative;
+                        padding: 20px;
+                        width: 100%;
+                        }
+                        .main-top{
+                        display: flex;
+                        width: 100%;
+                        }
+                        .main-top i{
+                        position: absolute;
+                        right: 0;
+                        margin: 10px 30px;
+                        color: rgb(110, 109, 109);
+                        cursor: pointer;
+                        }
+                     
+    /* SEARCHING  */
+                /* Style for the search container */
+                .search-container {
+                  display: flex;
+                  align-items: center;
+                  justify-content: center;
+                  flex-wrap: wrap;
+                  margin-bottom: 20px;
+                }
+
+                /* Style for input fields and select dropdowns */
+                .search-container input[type="text"],
+                .search-container input[type="number"],
+                .search-container select {
+                  padding: 10px;
+                  margin: 5px;
+                  border: 1px solid #ccc;
+                  border-radius: 5px;
+                  font-size: 10px;
+                  width: 150px;
+                }
+                .search-container input[type="text"]{
+                  width: 100%;
+                }
+                /* Style for the search button */
+                .search-container button {
+                  padding: 10px 10px;
+                  margin: 5px;
+                  border: none;
+                  border-radius: 5px;
+                  background-color: #007bff;
+                  color: #fff;
+                  font-size: 16px;
+                  cursor: pointer;
+                  transition: background-color 0.3s ease;
+                  background-size: 12px;
+                }
+
+                .search-container button:hover {
+                  background-color: #0056b3;
+                }
+
+                /* Additional styling for select dropdowns */
+                .search-container select {
+                  appearance: none;
+                  background-image: url('data:image/svg+xml;utf8,<svg fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>');
+                  background-repeat: no-repeat;
+                  background-position: right 10px center;
+                  padding-right: 30px;
+                  background-color: #fff;
+                  background-size: 12px;
+                }
+
+                /* Styling for placeholder text */
+                ::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+                  color: #aaa;
+                }
+                ::-moz-placeholder { /* Firefox 19+ */
+                  color: #aaa;
+                }
+                :-ms-input-placeholder { /* IE 10+ */
+                  color: #aaa;
+                }
+                :-moz-placeholder { /* Firefox 18- */
+                  color: #aaa;
+                }
+
+
+            
+            .list-of-products {
+              display: grid;
+              grid-template-columns: repeat(4, 1fr); /* Five columns */
+              grid-template-rows: repeat(3, auto); /* Three rows */
+              gap: 5px; /* Gap between grid items */
+              background-color: #fff;
+              border-radius: 10px;
+            }
+            
+            .product {
+              background-color: none;
+              padding: 10px;
+              text-align: center;
+              padding: 10px;
+            }
+              
+.card2 {
+              display: flex;
+              flex-direction: column;
+              align-items: center;
+              justify-content: space-around;
+              width: inherit;
+              height: inherit;
+              padding: 20px 1px;
+              margin: 10px 0;
+              text-align: center;
+              position: relative;
+              cursor: pointer;
+              box-shadow: 0 10px 15px -3px rgba(33,150,243,.4),0 4px 6px -4px rgba(33,150,243,.4);
+              border-radius: 10px;
+              background-color: #6B6ECC;
+              background: linear-gradient(45deg, #04051dea 0%, #2b566e 100%);
+            }
+            
+            .content2 {
+              padding: 20px;
+            }
+            
+            .content2 .price2 {
+              color: white;
+              font-weight: 800;
+              font-size: 40px;
+              text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.42);
+            }
+            
+            .content2 .description2 {
+              color: rgba(255, 255, 255, 0.6);
+              margin-top: 10px;
+              font-size: 10px;
+            }
+            
+            .content2 .title2 {
+              font-weight: 800;
+              text-transform: uppercase;
+              color: rgba(255, 255, 255, 0.64);
+              margin-top: 10px;
+              font-size: 20px;
+              letter-spacing: 1px;
+            }
+            
+            button {
+              -webkit-user-select: none;
+              -moz-user-select: none;
+              user-select: none;
+              border: none;
+              outline: none;
+              color: rgb(255 255 255);
+              text-transform: uppercase;
+              font-weight: 700;
+              font-size: .75rem;
+              padding: 0.75rem 1.5rem;
+              background-color: rgb(33 150 243);
+              border-radius: 0.5rem;
+              width: 90%;
+              text-shadow: 0px 4px 18px #2c3442;
+            }
+            
+                                      .card3 {
+                                        display: flex;
+                                        flex-direction: column;
+                                        align-items: center;
+                                        justify-content: space-around;
+                                        width: inherit;
+                                        height: inherit;
+                                        padding: 20px 1px;
+                                        margin: 10px 0;
+                                        text-align: center;
+                                        position: relative;
+                                        cursor: pointer;
+                                        box-shadow: 0 10px 15px -3px rgba(33,150,243,.4),0 4px 6px -4px rgba(33,150,243,.4);
+                                        border-radius: 10px;
+                                        background-color: #000000;
+                                        background: linear-gradient(45deg, #1c041dea 0%, #652b6e 100%);
+                                      }      
+                          
+                                      .edu {
+                                        -webkit-user-select: none;
+                                        -moz-user-select: none;
+                                        user-select: none;
+                                        border: none;
+                                        outline: none;
+                                        color: rgb(255 255 255);
+                                        text-transform: uppercase;
+                                        font-weight: 700;
+                                        font-size: .75rem;
+                                        padding: 0.75rem 1.5rem;
+                                        background-color: rgb(194, 33, 243);
+                                        border-radius: 0.5rem;
+                                        width: 90%;
+                                        text-shadow: 0px 4px 18px #2c3442;
+                                      }
+
+                                      .card4 {
+                                        display: flex;
+                                        flex-direction: column;
+                                        align-items: center;
+                                        justify-content: space-around;
+                                        width: inherit;
+                                        height: inherit;
+                                        padding: 20px 1px;
+                                        margin: 10px 0;
+                                        text-align: center;
+                                        position: relative;
+                                        cursor: pointer;
+                                        box-shadow: 0 10px 15px -3px rgba(33,150,243,.4),0 4px 6px -4px rgba(33,150,243,.4);
+                                        border-radius: 10px;
+                                        background-color: #000000;
+                                        background: linear-gradient(45deg, #1d0411ea 0%, #6e2b3b 100%);
+                                      }      
+                          
+                                      .edu4 {
+                                        -webkit-user-select: none;
+                                        -moz-user-select: none;
+                                        user-select: none;
+                                        border: none;
+                                        outline: none;
+                                        color: rgb(255 255 255);
+                                        text-transform: uppercase;
+                                        font-weight: 700;
+                                        font-size: .75rem;
+                                        padding: 0.75rem 1.5rem;
+                                        background-color: rgb(243, 33, 103);
+                                        border-radius: 0.5rem;
+                                        width: 90%;
+                                        text-shadow: 0px 4px 18px #2c3442;
+                                      }
+
+
+
+
+
+
+
+
+
+                          
+    /*Attendance List serction  */
+
+    .attendance{
+    margin-top: 20px;
+    text-transform: capitalize;
+    gap: 20PX;
+    
+      }
+    .attendance-list{
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    background: #fff;
+   
+    box-shadow: 0 20px 35px rgba(0, 0, 0, 0.1);
+    }
+
+
+
+    .reward-btn {
+      width: 120px;
+      height: 40px;
+      background-color: #101218;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: all 0.3s;
+    }
+    .IconContainer {
+      width: 40px;
+      height: 40px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+    }
+    .IconContainer svg {
+      width: 40%;
+      z-index: 3;
+    }
+    .box-top {
+      transition: all 0.3s;
+    }
+    .text {
+      width: 70px;
+      height: 100%;
+      font-size: 13px;
+      color: #6a8ef6;
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      font-weight: 600;
+    }
+    .reward-btn:hover .IconContainer .box-top {
+      transform: translateY(-5px);
+    }
+    .reward-btn:hover {
+      background-color: #202531;
+    }
+    .reward-btn:hover .coin {
+      transform: translateY(-5px);
+      transition-delay: 0.2s;
+    }
+    .coin {
+      width: 25%;
+      height: 25%;
+      background-color: #e4d61a;
+      position: absolute;
+      border-radius: 50%;
+      transition: all 0.3s;
+      z-index: 1;
+      border: 2px solid #ffe956;
+      margin-top: 4px;
+    }
+    
+   
+    
+    .form {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      max-width: 350px;
+      background-color: #fff;
+      padding: 20px;
+      border-radius: 20px;
+      position: relative;
+    }
+    
+    .title {
+      font-size: 28px;
+      color: royalblue;
+      font-weight: 600;
+      letter-spacing: -1px;
+      position: relative;
+      display: flex;
+      align-items: center;
+      padding-left: 30px;
+    }
+    
+    .title::before,.title::after {
+      position: absolute;
+      content: "";
+      height: 16px;
+      width: 16px;
+      border-radius: 50%;
+      left: 0px;
+      background-color: royalblue;
+    }
+    
+    .title::before {
+      width: 18px;
+      height: 18px;
+      background-color: royalblue;
+    }
+    
+    .title::after {
+      width: 18px;
+      height: 18px;
+      animation: pulse 1s linear infinite;
+    }
+    
+    .message, .signin {
+      color: rgba(88, 87, 87, 0.822);
+      font-size: 14px;
+    }
+    
+    .signin {
+      text-align: center;
+    }
+    
+    .signin a {
+      color: royalblue;
+    }
+    
+    .signin a:hover {
+      text-decoration: underline royalblue;
+    }
+    
+    .flex {
+      display: flex;
+      width: 100%;
+      gap: 6px;
+    }
+    
+    .form label {
+      position: relative;
+    }
+    
+    .form label .input {
+      width: 100%;
+      padding: 10px 10px 20px 10px;
+      outline: 0;
+      border: 1px solid rgba(105, 105, 105, 0.397);
+      border-radius: 10px;
+    }
+    
+    .form label .input + span {
+      position: absolute;
+      left: 10px;
+      top: 15px;
+      color: grey;
+      font-size: 0.9em;
+      cursor: text;
+      transition: 0.3s ease;
+    }
+    
+    .form label .input:placeholder-shown + span {
+      top: 15px;
+      font-size: 0.9em;
+    }
+    
+    .form label .input:focus + span,.form label .input:valid + span {
+      top: 30px;
+      font-size: 0.7em;
+      font-weight: 600;
+    }
+    
+    .form label .input:valid + span {
+      color: green;
+    }
+    
+    .submit {
+      border: none;
+      outline: none;
+      background-color: royalblue;
+      padding: 10px;
+      border-radius: 10px;
+      color: #fff;
+      font-size: 16px;
+      transform: .3s ease;
+    }
+    
+    .submit:hover {
+      background-color: rgb(56, 90, 194);
+    }
+    
+    @keyframes pulse {
+      from {
+        transform: scale(0.9);
+        opacity: 1;
+      }
+    
+      to {
+        transform: scale(1.8);
+        opacity: 0;
+      }
+    }
+    
+    .form {
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      background: #fff;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+      z-index: 1000; /* Ensure the form is above other content */
+      display: none; /* Initially hide the form */
+    }
+
+    /* CSS styles for the blur effect */
+    .blur {
+      filter: blur(5px); /* Adjust the blur amount as needed */
+    }
+
+    .pagination {
+      display: flex;
+      justify-content: center; /* Center the buttons horizontally */
+      margin-top: 20px;
+    }
+    
+    .pagination button {
+      padding: 10px 20px;
+      margin: 5px;
+      background-color: #4CAF50;
+      color: white;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+    
+    .pagination button:hover {
+      background-color: #45a049;
+    }
+    
+    .pagination button:disabled {
+      background-color: #cccccc;
+      cursor: not-allowed;
+    }
+    

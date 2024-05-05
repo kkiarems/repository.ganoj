@@ -1,0 +1,450 @@
+<span style="font-family: verdana, geneva, sans-serif;">
+  <!DOCTYPE html>
+  <html lang="en">
+
+  <head>
+    <meta charset="UTF-8" />
+    <title>Home</title>
+    <link rel="stylesheet" href="../../assets/responsive.css"/>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.7.0/chart.min.js"></script>
+    <link rel="stylesheet" href="../../assets/user_dash.CSS" />
+    <link rel="stylesheet" href="../../assets/user_main.CSS" />
+    <link rel="stylesheet" href="../../assets/user_cart.CSS" />
+    <link rel="stylesheet" href="../../assets/SETTINGS.CSS" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+
+  </head>
+
+  <body>
+    <div class="container">
+      <nav>
+        <ul>
+          <li><a href="./INDEX.HTML" class="loGO">
+              <img src="../../assets/img/prof/profile.png">
+              <span class="nav-item">USER</span>
+            </a></li>
+          <li><a href="./INDEX.HTML">
+              <i class="fas fa-home"></i>
+              <span class="nav-item">Home</span>
+            </a></li>
+          <li><a href="./MESSAGES.HTML">
+              <i class="fas fa-message"></i>
+              <span class="nav-item">Messages</span>
+            </a></li>
+          <li><a href="./MYCART.HTML ">
+              <i class="fas  fa-cart-shopping"></i>
+              <span class="nav-item">My Cart</span>
+            </a></li>
+          <li><a href="./SETTING.HTML">
+              <i class="fas fa-cog"></i>
+              <span class="nav-item">Setting</span>
+            </a></li>
+
+          <li><a href="../login/log.html" class="logout">
+              <i class="fas fa-sign-out-alt"></i>
+              <span class="nav-item">Log out</span>
+            </a></li>
+        </ul>
+      </nav>
+
+
+      <section class="indexmain">
+        
+        <div class="main-top">
+
+
+          <div class="search-container">
+            <input type="text" id="search-input" placeholder="Search products...">
+            <select id="category-filter">
+              <option value="">All Categories</option>
+              <option value="editing">Editing</option>
+              <option value="entertainment">Entertainment</option>
+              <option value="educational">Educational</option>
+            </select>
+            <select id="subscription-type-filter">
+              <option value="">All Subscription Types</option>
+              <option value="solo">Solo</option>
+              <option value="shared">Shared</option>
+            </select>
+            <select id="subscription-plan-filter">
+              <option value="">All Subscription Plans</option>
+              <option value="monthly">Monthly</option>
+              <option value="yearly">Yearly</option>
+            </select>
+            <input type="number" id="min-price" placeholder="Min Price">
+            <input type="number" id="max-price" placeholder="Max Price">
+            <button id="search-button">Search</button>
+          </div>
+
+          
+
+        </div>
+    
+
+        <div class="pagination">
+          <button id="prev-page">Previous</button>
+          <button id="next-page">Next</button>
+        </div>
+        
+        <div class="list-of-products" id="product-list">
+          <div class="product">
+            <div class="card2">
+              <div class="content2">
+                <div class="title2">Netflix</div>
+                <div class="price2">$39.99</div>
+                <div class="description2">
+                  Access to a wide range of movies, TV shows, and original content.
+                  High-quality streaming with no ads.
+                  Ability to watch on multiple devices simultaneously.
+                </div>
+              </div>
+
+              <button class="buy-now-btn">Buy now</button>
+            </div>
+
+          </div>
+          <div class="product">
+            <div class="card2">
+              <div class="content2">
+                <div class="title2">Spotify</div>
+                <div class="price2">$39.99</div>
+                <div class="description2">
+                  Unlimited access to millions of songs and podcasts.
+                  Ability to download music for offline listening.
+                  No ad interruptions during playback.Similar benefits as Solo Acc but for shared accounts, allowing
+                  multiple users to access the same subscription.
+                </div>
+              </div>
+
+              <button class="buy-now-btn">Buy now</button>
+            </div>
+
+          </div>
+          <div class="product">
+            <div class="card2">
+              <div class="content2">
+                <div class="title2">Youtube</div>
+                <div class="price2">$39.99</div>
+                <div class="description2">
+                  Access to ad-free videos and music.
+                  Ability to download videos for offline viewing.
+                  Exclusive access to YouTube Originals content.
+                </div>
+              </div>
+              <button class="buy-now-btn">Buy now</button>
+            </div>
+
+          </div>
+          <div class="product">
+            <div class="card2">
+              <div class="content2">
+                <div class="title2">Disney Plus</div>
+                <div class="price2">$39.99</div>
+                <div class="description2">
+                  Access to a vast library of Disney, Pixar, Marvel, Star Wars, and National Geographic content.
+                  Ability to stream on up to four devices simultaneously.
+                  Download content for offline viewing.
+                </div>
+              </div>
+              <button class="buy-now-btn">Buy now</button>
+            </div>
+          </div>
+          <div class="product">
+            <div class="card2">
+              <div class="content2">
+                <div class="title2">Bilibili</div>
+                <div class="price2">$39.99</div>
+                <div class="description2">
+                  Access to a diverse range of Chinese entertainment content including anime, manga, gaming, and more.
+                </div>
+              </div>
+
+              <button class="buy-now-btn">Buy now</button>
+            </div>
+
+          </div>
+          <div class="product">
+            <div class="card2">
+              <div class="content2">
+                <div class="title2">Quillbot</div>
+                <div class="price2">$39.99</div>
+                <div class="description2">
+                  Access to advanced paraphrasing and rewriting tools.
+                  Improve writing skills and efficiency.Similar benefits as Solo Acc but for shared accounts, allowing
+                  multiple users to access the same subscription.
+                </div>
+              </div>
+
+              <button class="buy-now-btn">Buy now</button>
+            </div>
+
+          </div>
+          <div class="product">
+            <div class="card2">
+              <div class="content2">
+                <div class="title2">Quizlet</div>
+                <div class="price2">$39.99</div>
+                <div class="description2">
+                  Access to a wide range of study tools including flashcards, quizzes, and games.
+                  Create personalized study materials and track progress.Similar benefits as Solo Acc but for shared
+                  accounts, allowing multiple users to access the same subscription.
+                </div>
+              </div>
+
+              <button class="buy-now-btn">Buy now</button>
+            </div>
+          </div>
+          <div class="product">
+            <div class="card2">
+              <div class="content2">
+                <div class="title2">Grammarly</div>
+                <div class="price2">$39.99</div>
+                <div class="description2">
+                  Advanced grammar checking, punctuation correction, and vocabulary enhancement.
+                  Writing style suggestions and plagiarism detection.Similar benefits as Shared Acc but for individual
+                  users.
+                </div>
+              </div>
+              <button class="buy-now-btn">Buy now</button>
+            </div>
+          </div>
+
+          <div class="product">
+            <div class="card2">
+              <div class="content2">
+                <div class="title2">Scribd</div>
+                <div class="price2">$39.99</div>
+                <div class="description2">
+                  Access to a vast library of ebooks, audiobooks, magazines, and documents.
+                  Ability to download content for offline reading.
+                </div>
+              </div>
+              <button class="buy-now-btn">Buy now</button>
+            </div>
+          </div>
+          <div class="product">
+            <div class="card2">
+              <div class="content2">
+                <div class="title2">Canva </div>
+                <div class="price2">$39.99</div>
+                <div class="description2">
+                  Access to a vast library of premium templates, photos, illustrations, and graphics.
+                  Ability to create unlimited designs with advanced features such as resizing, transparent backgrounds,
+                  and animation.
+                  Collaboration tools to work seamlessly with team members.
+                  Priority support for troubleshooting and assistance.
+                  Branding features to maintain consistency across designs.
+                </div>
+              </div>
+              <button class="buy-now-btn">Buy now</button>
+            </div>
+          </div>
+          <div class="product">
+            <div class="card2">
+              <div class="content2">
+                <div class="title2">Picsart </div>
+                <div class="price2">$39.99</div>
+                <div class="description2">
+                  Access to thousands of premium stickers, fonts, frames, and templates for photo editing.
+                  Advanced editing tools including curves, clone, stretch, and perspective adjustment.
+                  Ad-free experience with no interruptions while editing.
+                  Exclusive content and new releases added regularly for Gold members.
+                  Higher resolution export options for professional-quality results.
+                </div>
+              </div>
+
+              <button class="buy-now-btn">Buy now</button>
+            </div>
+
+          </div>
+          <div class="product">
+            <div class="card2">
+              <div class="content2">
+                <div class="title2">Remini </div>
+                <div class="price2">$39.99</div>
+                <div class="description2">
+                  AI-powered photo enhancement to restore and enhance old or low-quality photos.
+                  Advanced features for removing noise, blur, and artifacts from images.
+                  Enhance facial features, smooth skin, and improve overall image clarity.
+                  Save and share enhanced photos in high resolution without watermarks.
+                  Option to batch process multiple photos for efficiency.
+                </div>
+              </div>
+              <button class="buy-now-btn">Buy now</button>
+           
+          </div>
+          
+        </div>
+        
+
+        <form class="form" style="display: none;">
+          <p class="message">Fill up the Request Order Form:</p>
+          <div class="flex">
+              <label>
+                  <input required="" placeholder="" type="text" class="input">
+                  <span>Firstname</span>
+              </label>
+      
+              <label>
+                  <input required="" placeholder="" type="text" class="input">
+                  <span>Lastname</span>
+              </label>
+          </div>
+      
+          <label>
+              <input required="" placeholder="" type="email" class="input">
+              <span>Email</span>
+          </label>
+      
+          <label>
+            <input required="" placeholder="DD/MM/YYYY" type="text" class="input" id="dateInput">
+          
+          </label>
+      
+      
+          <label>
+            <select required="" class="input" placeholder="Subscription Plan">
+              <option value="solo">1 month</option>
+                <option value="solo">2 month</option>
+                <option value="shared">3 month</option>
+                <option value="solo">4 month</option>
+            </select>
+          </label>
+
+          <label>
+            <select required="" class="input" placeholder="Subscription Type">
+              
+              <option value="solo">Solo</option>
+              <option value="shared">Shared</option>
+          </select>
+        </label>
+      
+          <label>
+              <input required="" placeholder="Platform" type="text" class="input">
+          
+          </label>
+      
+          <button onclick="decline()">Declined</button>
+          <button class="submit"  >Confirm Request</button>
+          <a href="../client/MYCART.HTML" id="cartLink"></a>
+      </form>
+      
+        
+      </section>
+
+      <script>
+
+          // Get the "Submit Request" button
+    var submitButton = document.querySelector('.submit');
+
+// Add event listener to the button
+submitButton.addEventListener('click', function() {
+    // Navigate to the My Cart page
+    window.location.href = "";
+});
+
+        document.addEventListener('DOMContentLoaded', function() {
+          // Get all Buy now buttons
+          var buyNowButtons = document.querySelectorAll('.buy-now-btn');
+    
+          // Get the form
+          var form = document.querySelector('.form');
+    
+          // Attach click event listeners to Buy now buttons
+          buyNowButtons.forEach(function(button) {
+            button.addEventListener('click', function(event) {
+              // Prevent click event propagation
+              event.stopPropagation();
+    
+              // Toggle the visibility of the form
+              if (form) {
+                form.style.display = 'block';
+              }
+    
+              // Blur all other content except the cards
+              var otherContent = document.querySelectorAll('.product');
+              otherContent.forEach(function(item) {
+                item.classList.add('blur');
+              });
+            });
+          });
+    
+          // Close the form when clicking outside of it
+          document.addEventListener('click', function(event) {
+            if (form && !form.contains(event.target)) {
+              form.style.display = 'none';
+    
+              // Remove blur effect from the cards
+              var otherContent = document.querySelectorAll('.product');
+              otherContent.forEach(function(item) {
+                item.classList.remove('blur');
+              });
+            }
+          });
+        });
+
+
+         // Get the Dates input field
+    var dateInput = document.getElementById('dateInput');
+    
+    // Create a new Date object for the current date and time
+    var currentDate = new Date();
+    
+    // Convert the date to the Philippines timezone (GMT+8)
+    currentDate.setHours(currentDate.getHours() + 8);
+    
+    // Format the date as "DD/MM/YYYY" and set it as the value of the input field
+    var formattedDate = currentDate.toLocaleDateString('en-PH', { day: '2-digit', month: '2-digit', year: 'numeric' });
+    dateInput.value = formattedDate;
+
+
+
+    // JavaScript for pagination
+const productList = document.getElementById('product-list');
+const products = document.querySelectorAll('.list-of-products .product');
+const productsPerPage = 4;
+const totalPages = Math.ceil(products.length / productsPerPage);
+let currentPage = 1;
+
+// Function to show products for the current page
+function showProductsForPage(page) {
+  const start = (page - 1) * productsPerPage;
+  const end = start + productsPerPage;
+  products.forEach((product, index) => {
+    if (index >= start && index < end) {
+      product.style.display = 'block';
+    } else {
+      product.style.display = 'none';
+    }
+  });
+}
+
+// Function to handle next page click
+document.getElementById('next-page').addEventListener('click', () => {
+  if (currentPage < totalPages) {
+    currentPage++;
+    showProductsForPage(currentPage);
+  }
+});
+
+// Function to handle previous page click
+document.getElementById('prev-page').addEventListener('click', () => {
+  if (currentPage > 1) {
+    currentPage--;
+    showProductsForPage(currentPage);
+  }
+});
+
+// Initial call to show products for the first page
+showProductsForPage(currentPage);
+
+      </script>
+    
+      
+
+
+
+  </body>
+
+  </html>
+</span>

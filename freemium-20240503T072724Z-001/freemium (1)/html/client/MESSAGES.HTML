@@ -1,0 +1,188 @@
+<span style="font-family: verdana, geneva, sans-serif;">
+    <!DOCTYPE html>
+    <html lang="en">
+  
+    <head>
+      <meta charset="UTF-8" />
+      <title>Messages</title>
+      <link rel="stylesheet" href="../../assets/responsive.css" />
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.7.0/chart.min.js"></script>
+      <link rel="stylesheet" href="../../assets/user_mess.CSS" />
+      <link rel="stylesheet" href="../../assets/user_main.CSS" />
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+  
+    </head>
+  
+    <body>
+      <div class="container">
+        <nav>
+          <ul>
+            <li><a href="./INDEX.HTML" class="loGO">
+                <img src="../../assets/img/prof/profile.png">
+                <span class="nav-item">USER</span>
+              </a></li>
+            <li><a href="./INDEX.HTML">
+                <i class="fas fa-home"></i>
+                <span class="nav-item">Home</span>
+              </a></li>
+            <li><a href="./MESSAGES.HTML">
+                <i class="fas fa-message"></i>
+                <span class="nav-item">Messages</span>
+              </a></li>
+            <li><a href="./MYCART.HTML ">
+                <i class="fas  fa-cart-shopping"></i>
+                <span class="nav-item">My Cart</span>
+              </a></li>
+            <li><a href="./SETTING.HTML">
+                <i class="fas fa-cog"></i>
+                <span class="nav-item">Setting</span>
+              </a></li>
+  
+              <li><a href="../login/log.html" class="logout">
+                                <i class="fas fa-sign-out-alt"></i>
+                <span class="nav-item">Log out</span>
+              </a></li>
+          </ul>
+        </nav>
+  
+  
+        <section class="indexmain">
+          <div class="main-top">
+            <div class="chat-container clearfix">
+                <div class="people-list" id="people-list">
+                  <div class="search">
+                    <input type="text" placeholder="search" />
+                    <i class="fa fa-search"></i>
+                  </div>
+                  <ul class="list">
+                    <li class="clearfix">
+                      <img src="../../assets/img/prof/profile.png" alt="avatar" />
+                      <div class="about">
+                        <div class="name">Admin</div>
+                        <div class="status">
+                          <i class="fa fa-circle online"></i> online
+                        </div>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+                
+                <div class="chat">
+                  <div class="chat-header clearfix">
+                    <img src="../../assets/img/prof/profile.png" alt="avatar" />
+                    
+                    <div class="chat-about">
+                      <div class="chat-with">Chat with  Admin</div>
+                      <div class="chat-num-messages">already 1 902 messages</div>
+                    </div>
+                    <i class="fa fa-star"></i>
+                  </div> <!-- end chat-header -->
+                  
+                  <div class="chat-history">
+                    <ul>
+                      <li class="clearfix">
+                        <div class="message-data align-right">
+                          <span class="message-data-time" >10:10 AM, Today</span> &nbsp; &nbsp;
+                          <span class="message-data-name" >User</span> <i class="fa fa-circle me"></i>
+                          
+                        </div>
+                        <div class="message other-message float-right">
+                          Hi Admin, what's the status of my order request?
+                        </div>
+                      </li>
+                      
+                      <li>
+                        <div class="message-data">
+                          <span class="message-data-name"><i class="fa fa-circle online"></i> Admin</span>
+                          <span class="message-data-time">10:12 AM, Today</span>
+                        </div>
+                        <div class="message my-message">
+                           We have available account that you have requested.
+                        </div>
+                      </li>
+                      
+                      <li class="clearfix">
+                        <div class="message-data align-right">
+                          <span class="message-data-time" >10:14 AM, Today</span> &nbsp; &nbsp;
+                          <span class="message-data-name" >User</span> <i class="fa fa-circle me"></i>
+                          
+                        </div>
+                        <div class="message other-message float-right">
+                        Can I get the account details?
+                        </div>
+                      </li>
+                      
+                      <li>
+                        <div class="message-data">
+                          <span class="message-data-name"><i class="fa fa-circle online"></i> Admin</span>
+                          <span class="message-data-time">10:20 AM, Today</span>
+                        </div>
+                        <div class="message my-message">
+                          Actually everything was fine. I'm very excited to show this to our team.
+                        </div>
+                      </li>
+                      
+                      <li>
+                        <div class="message-data">
+                          <span class="message-data-name"><i class="fa fa-circle online"></i> Admin</span>
+                          <span class="message-data-time">10:31 AM, Today</span>
+                        </div>
+                        <i class="fa fa-circle online"></i>
+                        <i class="fa fa-circle online" style="color: #AED2A6"></i>
+                        <i class="fa fa-circle online" style="color:#DAE9DA"></i>
+                      </li>
+                      
+                    </ul>
+                    
+                  </div> <!-- end chat-history -->
+                  
+                  <div class="chat-message clearfix">
+                    <textarea name="message-to-send" id="message-to-send" placeholder ="Type your message" rows="3"></textarea>
+                            
+                    <i class="fa fa-file-o"></i> &nbsp;&nbsp;&nbsp;
+                    <i class="fa fa-file-image-o"></i>
+                    <input type="file" id="file-input" accept="image/*"> <!-- Add input for uploading photos -->
+                    <button>Send</button>
+            
+                  </div> <!-- end chat-message -->
+                  
+                </div> <!-- end chat -->
+                
+              </div> <!-- end container -->
+            
+            <script id="message-template" type="text/x-handlebars-template">
+              <li class="clearfix">
+                <div class="message-data align-right">
+                  <span class="message-data-time" >{{time}}, Today</span> &nbsp; &nbsp;
+                  <span class="message-data-name" >Olia</span> <i class="fa fa-circle me"></i>
+                </div>
+                <div class="message other-message float-right">
+                  {{messageOutput}}
+                </div>
+              </li>
+            </script>
+            
+            <script id="message-response-template" type="text/x-handlebars-template">
+              <li>
+                <div class="message-data">
+                  <span class="message-data-name"><i class="fa fa-circle online"></i> Vincent</span>
+                  <span class="message-data-time">{{time}}, Today</span>
+                </div>
+                <div class="message my-message">
+                  {{response}}
+                </div>
+              </li>
+            </script>
+  
+  
+            
+  
+            </div>
+          
+        </section>
+  
+       
+    </body>
+  
+    </html>
+  </span>
