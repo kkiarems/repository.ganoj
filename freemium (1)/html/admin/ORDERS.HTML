@@ -1,0 +1,257 @@
+<span style="font-family: verdana, geneva, sans-serif;"><!DOCTYPE html>
+	<html lang="en">
+	<head>
+	  <meta charset="UTF-8" />
+	  <title>Attendance Dashboard | By Code Info</title>
+    <link rel="stylesheet" href="../../assets/responsive.css" />
+	  <link rel="stylesheet" href="../../assets/ad_user.css" />
+	   <link rel="stylesheet" href="../../assets/ad_dash.css" />
+       <link rel="stylesheet" href="../../assets/ad_order.css" />
+	  <!-- Font Awesome Cdn Link -->
+	  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"/>
+	</head>
+	<body>
+	  <div class="container">
+			<nav>
+				<ul>
+					<li><a href="#" class="loGO">
+						<img src="../../assets/img/prof/profile.png">
+							<span class="nav-item">Admin</span>
+						</a></li>
+            <li><a href="./INDEX.HTML">
+							<i class="fas fa-home"></i>
+							<span class="nav-item">Dashboard</span>
+						</a></li>
+					<li><a href="./USER.HTML">
+							<i class="fas fa-user"></i>
+							<span class="nav-item">User</span>
+						</a></li>
+					<li><a href="./ORDERS.HTML">
+							<i class="fas fa-shopping-cart" ></i>
+							<span class="nav-item">Orders</span>
+						</a></li>
+					<li><a href="./PRODUCT.HTML">
+							<i class="fas fa-chart-bar"></i>
+							<span class="nav-item">Products</span>
+						</a></li>
+					<li><a href="./SETTING.HTML">
+							<i class="fas fa-cog"></i>
+							<span class="nav-item">Setting</span>
+						</a></li>
+
+					<li><a href="../login/log.html" class="logout">
+							<i class="fas fa-sign-out-alt"></i>
+							<span class="nav-item">Log out</span>
+						</a></li>
+				</ul>
+			</nav>
+	  
+	
+		<section class="main">
+      <div class="search">
+        <input placeholder="Search..." type="text">
+        <button type="submit">Go</button>
+      </div>
+		  <div class="main-top">
+            <div class="history_lists">
+                <div class="list1">
+                  <table>
+                    <caption> ORDER REQUEST </caption>
+                    <thead>
+                      <tr>
+                        <th>#</th>
+                        <th>Dates</th>
+                        <th>Name</th>
+                        <th>Type</th>
+                        <th>Platform</th>
+                        <th>Ammount</th>
+                        <th>Approval</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>1</td>
+                        <td>2, Aug, 2022</td>
+                        <td>Sam Tonny</td>
+                        <td>Premium</td>
+                        <td>Youtube</td>
+                        <td>$2000.00</td>
+                        <td>
+                            <button onclick="approve()">Approved</button> <!-- Button for Approval -->
+                            <button onclick="decline()">Declined</button> <!-- Button for Decline -->
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>2</td>
+                        <td>29, July, 2022</td>
+                        
+                        <td>Code Info</td>
+                        <td>Solo</td>
+                        <td>Netflix</td>
+                        <td>$5,000.00</td>
+                        <td>
+                            <button onclick="approve()">Approved</button> <!-- Button for Approval -->
+                            <button onclick="decline()">Declined</button> <!-- Button for Decline -->
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>3</td>
+                        <td>15, July, 2022</td>
+                      
+                        <td>Jhon David</td>
+                        <td>Solo</td>
+                        <td>Hulu</td>
+                        <td>$3000.00</td>
+                        <td>
+                            <button onclick="approve()">Approved</button> <!-- Button for Approval -->
+                            <button onclick="decline()">Declined</button> <!-- Button for Decline -->
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>4</td>
+                        <td>5, July, 2022</td>
+                        <td>Salina Gomiz</td>
+                        <td>Premium</td>
+                        <td>Adobe Illustrator</td>
+                        <td>$7000.00</td>
+                        <td>
+                            <button onclick="approve()">Approved</button> <!-- Button for Approval -->
+                            <button onclick="decline()">Declined</button> <!-- Button for Decline -->
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>5</td>
+                        <td>29, June, 2022</td>
+                        <td>Gomiz</td>
+                        <td>Shared</td>
+                        <td>Chatgptr</td>
+                        <td>$4000.00</td>
+                        <td>
+                            <button onclick="approve()">Approved</button> <!-- Button for Approval -->
+                            <button onclick="decline()">Declined</button> <!-- Button for Decline -->
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>6</td>
+                        <td>28, June, 2022</td>
+                        <td>Elyana Jhon</td>
+                        <td>Premium</td>
+                        <td>Canva</td>
+                        <td>$2000.00</td>
+                        <td>
+                            <button onclick="approve()">Approved</button> <!-- Button for Approval -->
+                            <button onclick="decline()">Declined</button> <!-- Button for Decline -->
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                  
+                  <table>
+                    <caption>PAST ORDER</caption>
+                    <thead>
+                      <tr>
+                        <th>#</th>
+                        <th>Dates</th>
+                        <th>Name</th>
+                        <th>Type</th>
+                        <TH>Platfrom Email</TH>
+                        <TH>Platform Password</TH>
+                        <th>Platform</th>
+                        <th>Ammount</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>1</td>
+                        <td>2, Aug, 2022</td>
+                        <td>Sam Tonny</td>
+                        <td>Premium</td>
+                        <td>netflix@gmail.com</td>
+                        <td>12343454</td>
+                        <td>Youtube</td>
+                        <td>$2000.00</td>
+                      </tr>
+                      <tr>
+                        <td>2</td>
+                        <td>29, July, 2022</td>
+                        
+                        <td>Code Info</td>
+                        <td>Solo</td>
+                        <td>netflix@gmail.com</td>
+                        <td>12343454</td>
+                        <td>Netflix</td>
+                        <td>$5,000.00</td>
+                      </tr>
+                      <tr>
+                        <td>3</td>
+                        <td>15, July, 2022</td>
+                      
+                        <td>Jhon David</td>
+                        <td>Solo</td>
+                        <td>netflix@gmail.com</td>
+                        <td>12343454</td>
+                        <td>Hulu</td>
+                        <td>$3000.00</td>
+                      </tr>
+                      <tr>
+                        <td>4</td>
+                        <td>5, July, 2022</td>
+                        <td>Salina Gomiz</td>
+                        <td>Premium</td>
+                        <td>netflix@gmail.com</td>
+                        <td>12343454</td>
+                        <td>Adobe Illustrator</td>
+                        <td>$7000.00</td>
+                      </tr>
+                      <tr>
+                        <td>5</td>
+                        <td>29, June, 2022</td>
+                        <td>Gomiz</td>
+                        <td>Shared</td>
+                        <td>netflix@gmail.com</td>
+                        <td>12343454</td>
+                        <td>Chatgptr</td>
+                        <td>$4000.00</td>
+                      </tr>
+                      <tr>
+                        <td>6</td>
+                        <td>28, June, 2022</td>
+                        <td>Elyana Jhon</td>
+                        <td>Premium</td>
+                        <td>netflix@gmail.com</td>
+                        <td>12343454</td>
+                        <td>Canva</td>
+                        <td>$2000.00</td>
+                      </tr>
+                    </tbody>
+                  </table>
+
+
+                </div>
+      
+              </div>
+            </div>
+				
+		  
+		
+            
+				
+			</div>
+        </section>
+        </div>
+		  </section>
+      <script>
+        function approve() {
+    // Redirect to the specified URL when approved
+    window.location.href = "C:\\Users\\ACER\\Desktop\\BEJOCxTOLENTINO\\CLIENT HTML\\MESSAGES.HTML";
+  }
+
+  function decline() {
+    // Redirect to the specified URL when declined
+    window.location.href = "C:\\Users\\ACER\\Desktop\\BEJOCxTOLENTINO\\CLIENT HTML\\MESSAGES.HTML";
+  }
+      </script>
+			  
+	</body>
+	</html>
+	</span>

@@ -1,0 +1,95 @@
+/* Add this CSS to your existing style.css file or create a new CSS file */
+
+/* Container */
+.container {
+  width: 100%;
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Heading */
+.heading {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+/* Input fields */
+.input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+/* Forgot password link */
+.forgot-password {
+  display: block;
+  text-align: right;
+  margin-bottom: 20px;
+}
+
+/* Login button */
+.login-button {
+  width: 100%;
+  padding: 10px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.login-button:hover {
+  background-color: #0056b3;
+}
+
+/* Social account container */
+.social-account-container {
+  text-align: center;
+}
+
+/* Title for social accounts */
+.title {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+/* Social buttons */
+.social-accounts {
+  margin-bottom: 20px;
+}
+
+.social-button {
+  width: 40px;
+  height: 40px;
+  background-color: #ccc;
+  border: none;
+  border-radius: 50%;
+  margin: 0 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.social-button:hover {
+  background-color: #bfbfbf;
+}
+
+/* Agreement link */
+.agreement {
+  font-size: 14px;
+  text-align: center;
+}
+
+.agreement a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.agreement a:hover {
+  text-decoration: underline;
+}

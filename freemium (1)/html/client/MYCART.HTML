@@ -1,0 +1,335 @@
+<span style="font-family: verdana, geneva, sans-serif;">
+    <!DOCTYPE html>
+    <html lang="en">
+  
+    <head>
+      <meta charset="UTF-8" />
+      <title>My Cart</title>
+      <link rel="stylesheet" href="../../assets/responsive.css"/>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.7.0/chart.min.js"></script>
+      <link rel="stylesheet" href="../../assets/user_cart.CSS" />
+      <link rel="stylesheet" href="../../assets/user_main.CSS" />
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+  
+    </head>
+  
+    <body>
+      <div class="container">
+        <nav>
+          <ul>
+            <li><a href="./INDEX.HTML" class="loGO">
+                <img src="../../assets/img/prof/profile.png">
+                <span class="nav-item">USER</span>
+              </a></li>
+            <li><a href="./INDEX.HTML">
+                <i class="fas fa-home"></i>
+                <span class="nav-item">Home</span>
+              </a></li>
+            <li><a href="./MESSAGES.HTML">
+                <i class="fas fa-message"></i>
+                <span class="nav-item">Messages</span>
+              </a></li>
+            <li><a href="./MYCART.HTML ">
+                <i class="fas  fa-cart-shopping"></i>
+                <span class="nav-item">My Cart</span>
+              </a></li>
+            <li><a href="./SETTING.HTML">
+                <i class="fas fa-cog"></i>
+                <span class="nav-item">Setting</span>
+              </a></li>
+  
+              <li><a href="../login/log.html" class="logout">
+                                <i class="fas fa-sign-out-alt"></i>
+                <span class="nav-item">Log out</span>
+              </a></li>
+          </ul>
+        </nav>
+  
+  
+        <section class="indexmain">
+          <div> 
+            <h2>My Orders</h2>
+            <div class="pagination">
+                <button id="prev-page">Previous</button>
+                <button id="next-page">Next</button>
+              </div> 
+          </div>
+
+          <div class="main-top">
+            <table class="product-listing">
+              <thead>
+                  <tr>
+                      <th>ID</th>
+                      <th>Product name</th>
+                      <th>Product Email</th>
+                      <th>Product Password</th>
+                      <th>Subscription Type</th>
+                      <th>Price</th>
+                     
+                  </tr>
+              </thead>
+              <tbody>
+                  <tr>
+                      <td>01</td>
+                      <td>Netflix</td>
+                      <td>netflix@gmail.com</td>
+                      <td>netflixpass</td>
+                      <td>Solo</td>
+                      <td>₱180 (1 month)</td>
+                     
+                  </tr>
+                  <tr>
+                      <td>02</td>
+                      <td>Netflix</td>
+                      <td>netflix@gmail.com</td>
+                      <td>netflixpass</td>
+                      <td>Shared</td>
+                      <td>₱90 (1 month)</td>
+                     
+                  </tr>
+                  <tr>
+                      <td>03</td>
+                      <td>Spotify</td>
+                      <td>spotify@gmail.com</td>
+                      <td>spotifypass</td>
+                      <td>Solo</td>
+                      <td>₱80 (2 months)</td>
+                      
+                  </tr>
+                  <!-- Add pricing information for Quillbot -->
+                  <tr>
+                      <td>04</td>
+                      <td>Quillbot</td>
+                      <td>quillbot@gmail.com</td>
+                      <td>quillbotpass</td>
+                      <td>Solo</td>
+                      <td>₱70 (1 month)</td>
+                    
+                  </tr>
+                  <tr>
+                      <td>05</td>
+                      <td>Quillbot</td>
+                      <td>quillbot@gmail.com</td>
+                      <td>quillbotpass</td>
+                      <td>Solo</td>
+                      <td>₱100 (2 months)</td>
+                 
+                  </tr>
+                  <tr>
+                      <td>06</td>
+                      <td>Quillbot</td>
+                      <td>quillbot@gmail.com</td>
+                      <td>quillbotpass</td>
+                      <td>Solo</td>
+                      <td>₱130 (3 months)</td>
+                    
+                  </tr>
+                  <tr>
+                      <td>07</td>
+                      <td>Quillbot</td>
+                      <td>quillbot@gmail.com</td>
+                      <td>quillbotpass</td>
+                      <td>Shared</td>
+                      <td>₱20 (1 month)</td>
+                      
+                  </tr>
+                  <tr>
+                      <td>08</td>
+                      <td>Quillbot</td>
+                      <td>quillbot@gmail.com</td>
+                      <td>quillbotpass</td>
+                      <td>Shared</td>
+                      <td>₱40 (2 months)</td>
+                 
+                  </tr>
+                  <tr>
+                      <td>09</td>
+                      <td>Quillbot</td>
+                      <td>quillbot@gmail.com</td>
+                      <td>quillbotpass</td>
+                      <td>Shared</td>
+                      <td>₱50 (3 months)</td>
+                    
+                  </tr>
+                  <!-- Add pricing information for Quizlet -->
+                  <tr>
+                      <td>10</td>
+                      <td>Quizlet</td>
+                      <td>quizlet@gmail.com</td>
+                      <td>quizletpass</td>
+                      <td>Solo</td>
+                      <td>₱50 (1 month)</td>
+                      
+                  </tr>
+                  <tr>
+                      <td>11</td>
+                      <td>Quizlet</td>
+                      <td>quizlet@gmail.com</td>
+                      <td>quizletpass</td>
+                      <td>Solo</td>
+                      <td>₱70 (2 months)</td>
+                     
+                  </tr>
+                  <tr>
+                      <td>12</td>
+                      <td>Quizlet</td>
+                      <td>quizlet@gmail.com</td>
+                      <td>quizletpass</td>
+                      <td>Solo</td>
+                      <td>₱105 (3 months)</td>
+                     
+                  </tr>
+                  <!-- Add pricing information for Grammarly -->
+                  <tr>
+                      <td>13</td>
+                      <td>Grammarly</td>
+                      <td>grammarly@gmail.com</td>
+                      <td>grammarlypass</td>
+                      <td>Shared</td>
+                      <td>₱80 (1 month)</td>
+                   
+                  </tr>
+                  <tr>
+                      <td>14</td>
+                      <td>Grammarly</td>
+                      <td>grammarly@gmail.com</td>
+                      <td>grammarlypass</td>
+                      <td>Shared</td>
+                      <td>₱150 (2 months)</td>
+                 
+                  </tr>
+                  <tr>
+                      <td>15</td>
+                      <td>Grammarly</td>
+                      <td>grammarly@gmail.com</td>
+                      <td>grammarlypass</td>
+                      <td>Shared</td>
+                      <td>₱200 (3 months)</td>
+        
+                  </tr>
+                  <!-- Add pricing information for Scribd -->
+                  <tr>
+                      <td>16</td>
+                      <td>Scribd</td>
+                      <td>scribd@gmail.com</td>
+                      <td>scribdpass</td>
+                      <td>Solo</td>
+                      <td>₱70 (1 month)</td>
+                    
+                  </tr>
+                  <tr>
+                      <td>17</td>
+                      <td>Scribd</td>
+                      <td>scribd@gmail.com</td>
+                      <td>scribdpass</td>
+                      <td>Solo</td>
+                      <td>₱135 (3 months)</td>
+                     
+                  </tr>
+                  <tr>
+                      <td>18</td>
+                      <td>Scribd</td>
+                      <td>scribd@gmail.com</td>
+                      <td>scribdpass</td>
+                      <td>Shared</td>
+                      <td>₱30 (1 month)</td>
+                      
+                  </tr>
+                  <tr>
+                      <td>19</td>
+                      <td>Scribd</td>
+                      <td>scribd@gmail.com</td>
+                      <td>scribdpass</td>
+                      <td>Shared</td>
+                      <td>₱70 (3 months)</td>
+              
+                  </tr>
+                  <!-- Add pricing information for Studocu -->
+                  <tr>
+                      <td>20</td>
+                      <td>Studocu</td>
+                      <td>studocu@gmail.com</td>
+                      <td>studocupass</td>
+                      <td>Solo</td>
+                      <td>₱70 (1 month)</td>
+                      
+                  </tr>
+              </tbody>
+          </table>
+         
+          </div>
+
+          
+      </div>
+  
+        </div>
+  
+    
+          
+        </section>
+        <script>
+          function showOrders(tabName) {
+              // Hide all order containers
+              document.getElementById('pending-orders').style.display = 'none';
+              document.getElementById('past-orders').style.display = 'none';
+  
+              // Show the selected order container
+              document.getElementById(tabName + '-orders').style.display = 'block';
+  
+              // Highlight the selected tab
+              document.getElementById('pending-tab').classList.remove('active');
+              document.getElementById('past-tab').classList.remove('active');
+              document.getElementById(tabName + '-tab').classList.add('active');
+          }
+  
+          function checkoutOrder(orderId) {
+              // Implement the checkout functionality here
+              alert('Checkout for Order ID: ' + orderId);
+          }
+
+
+          // Add these variables to your script
+let currentPage = 1;
+const productsPerPage = 5;
+const productRows = document.querySelectorAll('.product-listing tbody tr');
+const totalPages = Math.ceil(productRows.length / productsPerPage);
+
+// Function to show products for the current page
+function showProductsForPage(page) {
+  const start = (page - 1) * productsPerPage;
+  const end = start + productsPerPage;
+  productRows.forEach((row, index) => {
+    if (index >= start && index < end) {
+      row.style.display = 'table-row';
+    } else {
+      row.style.display = 'none';
+    }
+  });
+}
+
+// Function to handle next page click
+document.getElementById('next-page').addEventListener('click', () => {
+  if (currentPage < totalPages) {
+    currentPage++;
+    showProductsForPage(currentPage);
+  }
+});
+
+// Function to handle previous page click
+document.getElementById('prev-page').addEventListener('click', () => {
+  if (currentPage > 1) {
+    currentPage--;
+    showProductsForPage(currentPage);
+  }
+});
+
+// Initial call to show products for the first page
+showProductsForPage(currentPage);
+
+
+      </script>
+       
+    </body>
+  
+    </html>
+  </span>

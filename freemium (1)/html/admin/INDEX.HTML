@@ -1,0 +1,219 @@
+<span style="font-family: verdana, geneva, sans-serif;">
+	<!DOCTYPE html>
+	<html lang="en">
+
+	<head>
+		<meta charset="UTF-8" />
+		<title>Attendance Dashboard | By Code Info</title>
+		<link rel="stylesheet" href="../../assets/responsive.css">
+ 
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.7.0/chart.min.js"></script>
+		<link rel="stylesheet" href="../../assets/responsive.css" />
+		<link rel="stylesheet" href="../../assets/ad_user.css" />
+		 <link rel="stylesheet" href="../../assets/ad_dash.css" />
+		 <link rel="stylesheet" href="../../assets/ad_order.css" />
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+	</head>
+	 
+	<body>
+		<div class="container">
+			<nav>
+				<ul>
+					<li><a href="#" class="loGO">
+							<img src="../../assets/img/prof/profile.png">
+							<span class="nav-item">Admin</span>
+						</a></li>
+					<li><a href="./INDEX.HTML">
+							<i class="fas fa-home"></i>
+							<span class="nav-item">Dashboard</span>
+						</a></li>
+					<li><a href="./USER.HTML">
+							<i class="fas fa-user"></i>
+							<span class="nav-item">User</span>
+						</a></li>
+					<li><a href="./ORDERS.HTML">
+							<i class="fas fa-shopping-cart" ></i>
+							<span class="nav-item">Orders</span>
+						</a></li>
+					<li><a href="./PRODUCT.HTML">
+							<i class="fas fa-chart-bar"></i>
+							<span class="nav-item">Products</span>
+						</a></li>
+					<li><a href="./SETTING.HTML">
+							<i class="fas fa-cog"></i>
+							<span class="nav-item">Setting</span>
+						</a></li>
+
+					<li><a href="../login/log.html" class="logout">
+							<i class="fas fa-sign-out-alt"></i>
+							<span class="nav-item">Log out</span>
+						</a></li>
+				</ul>
+			</nav>
+
+
+			<section class="indexmain">
+				<h2>Dashboard</h2>
+				<div class=first">
+					<div class="row">
+
+						<div class="column">
+							<div class="promo_card">
+								<div class="top-products">
+									<h2>Top Sales Products</h2>
+									<div class="product-filter">
+										<label for="category">Category:</label>
+										<select id="category">
+											<option value="all">All Categories</option>
+											<option value="electronics">Editing</option>
+											<option value="clothing">Entertainment</option>
+											<option value="home">Educational</option>
+										</select>
+										<label for="time-period">Time Period:</label>
+										<select id="time-period">
+											<option value="this-month">This Month</option>
+											<option value="last-month">Last Month</option>
+											<option value="this-year">This Year</option>
+										</select>
+									</div>
+									<div class="product-list">
+										<div class="product">
+											<img src="../../assets/img/icons/4362951_youtube_logo_social media_icon.png" alt=" ">
+											<div class="product-details">
+												<h3> Youtube </h3>
+												<p>Sales: 1000</p>
+												<p>Revenue: 5000</p>
+											</div>
+										</div>
+										<!-- Repeat similar structure for other products -->
+									</div>
+								</div>
+								</div>
+						</div>
+					
+						<div class="column">
+							<div class="sales-chart-container">
+								<caption>Total Sales </caption>
+								<canvas id="salesChart2"></canvas>
+							</div>
+						</div>
+					</div>
+				</div>
+
+
+
+				<div class="main-top">
+					<div class="history_lists">
+						<table>
+							<caption>RECENT ORDER</caption>
+							<thead>
+								<tr>
+									<th>#</th>
+									<th>Dates</th>
+									<th>Name</th>
+									<th>Type</th>
+									<th>Platform</th>
+									<th>Ammount</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>1</td>
+									<td>2, Aug, 2022</td>
+									<td>Sam Tonny</td>
+									<td>Premium</td>
+									<td>Youtube</td>
+									<td>$2000.00</td>
+								</tr>
+								<tr>
+									<td>2</td>
+									<td>29, July, 2022</td>
+
+									<td>Code Info</td>
+									<td>Solo</td>
+									<td>Netflix</td>
+									<td>$5,000.00</td>
+								</tr>
+								<tr>
+									<td>3</td>
+									<td>15, July, 2022</td>
+
+									<td>Jhon David</td>
+									<td>Solo</td>
+									<td>Hulu</td>
+									<td>$3000.00</td>
+								</tr>
+								<tr>
+									<td>4</td>
+									<td>5, July, 2022</td>
+									<td>Salina Gomiz</td>
+									<td>Premium</td>
+									<td>Adobe Illustrator</td>
+									<td>$7000.00</td>
+								</tr>
+								<tr>
+									<td>5</td>
+									<td>29, June, 2022</td>
+									<td>Gomiz</td>
+									<td>Shared</td>
+									<td>Chatgptr</td>
+									<td>$4000.00</td>
+								</tr>
+								<tr>
+									<td>6</td>
+									<td>28, June, 2022</td>
+									<td>Elyana Jhon</td>
+									<td>Premium</td>
+									<td>Canva</td>
+									<td>$2000.00</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+
+				</div>
+
+
+			</section>
+
+			<script>
+				// Sample sales data for the categories
+				const salesData = {
+					editing: 80,
+					educational: 60,
+					entertainment: 70
+				};
+
+				// Get the canvas element
+				const salesChartCanvas = document.getElementById('salesChart2').getContext('2d');
+
+				// Create the bar chart
+				new Chart(salesChartCanvas, {
+					type: 'bar',
+					data: {
+						labels: Object.keys(salesData),
+						datasets: [{
+							label: 'Sales',
+							data: Object.values(salesData),
+							backgroundColor: [
+								'rgba(52, 152, 219, 0.6)', // Blue for editing
+								'rgba(46, 204, 113, 0.6)', // Green for educational
+								'rgba(243, 156, 18, 0.6)'  // Yellow for entertainment
+							]
+						}]
+					},
+					options: {
+						responsive: true,
+						scales: {
+							y: {
+								beginAtZero: true
+							}
+						}
+					}
+				});
+			</script>
+
+	</body>
+
+	</html>
+</span>
